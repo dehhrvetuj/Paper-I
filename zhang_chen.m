@@ -50,7 +50,7 @@ for i=1:7
     exp_tmp = vel_temp_exp(1+j*9:7+j*9,7);
     
     
-    %
+    % construct smoothing spline
     sp_v = spaps(pos,vel,tol);
     vel = fnval(sp_v,z);
     
